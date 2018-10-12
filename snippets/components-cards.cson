@@ -1,0 +1,128 @@
+'.text.html': # Work only with HTML SVG
+
+  # Cards
+  'Cards BS-4':
+    'prefix': 'car'
+    'body': """
+            <div class="card"${1: style="width: 18rem;"}>
+              <img class="card-img-top" src="${2:holder.js/100%x180/}" alt="${3:Card image cap}">
+              <div class="card-body">
+               <h5 class="card-title">${4:Card title}</h5>
+               <p class="card-text">${5:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+               <a href="${6:#}" class="btn btn-primary">${7:Button name}</a>
+              </div>
+            </div>
+            """
+    'description': 'Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components'
+    'descriptionMoreURL': 'https://getbootstrap.com/docs/4.1/components/card#example'
+
+# Cards content types
+  'Cards body BS-4':
+    'prefix': 'carbody'
+    'description': 'Use it whenever you need a card padded section'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <div class="card-body">
+              ${2:This is some text within a card body.}
+            </div>
+          </div>
+          """
+
+  'Cards title and links BS-4':
+    'prefix': 'cartit'
+    'description': 'Cards with a titles, text, and links'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <div class="card-body">
+              <h5 class="card-title">${2:Card title}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">${3:Card subtitle}</h6>
+              <p class="card-text">${4:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+              <a href="${5:#}" class="card-link">${6:Card link}</a>
+              <a href="${7:#}" class="card-link">${8:Another link}</a>
+            </div>
+          </div>
+          """
+
+  'Card images top BS-4':
+    'prefix': 'carimg'
+    'description': 'Card with an image at the top'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <img class="card-img-top" src="${2:holder.js/100%x180/?text=Image cap}" alt="${3:Card image cap}">
+            <div class="card-body">
+              <p class="card-text">${4:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+            </div>
+          </div>
+          """
+
+  'Card list groups BS-4':
+    'prefix': 'carligr'
+    'description': 'reate lists of content in a card with a flush list group'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${2:Cras justo odio}</li>
+              <li class="list-group-item">${3:Dapibus ac facilisis in}</li>
+              <li class="list-group-item">${4:Vestibulum at eros}</li>
+            </ul>
+          </div>
+          """
+
+  'Card-list-header BS-4':
+    'prefix': 'carligh'
+    'description': 'Cards: list groups - with card-header'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <div class="card-header">
+              ${2:List header}
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${3:Cras justo odio}</li>
+              <li class="list-group-item">${4:Dapibus ac facilisis in}</li>
+              <li class="list-group-item">${5:Vestibulum at eros}</li>
+            </ul>
+          </div>
+          """
+
+  'Card full':
+    'prefix': 'carmax'
+    'description': 'Card with a multiple content types (max)'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <img class="card-img-top" src="${2:ip/img-law/png/}" alt="${3:Card image cap}">
+            <div class="card-body">
+              <h5 class="card-title">${4:Card title}</h5>
+              <p class="card-text">${5:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${6:Cras justo odio}</li>
+              <li class="list-group-item">${7:Dapibus ac facilisis in}</li>
+              <li class="list-group-item">${8:Vestibulum at eros}</li>
+            </ul>
+            <div class="card-body">
+              <a href="${9:#}" class="card-link">${10:Card link}</a>
+              <a href="${11:#}" class="card-link">${12:Another link}</a>
+            </div>
+          </div>
+          """
+
+  'Cards content type BS-4':
+    'prefix': 'carct'
+    'body': """
+          <div class="card"${1: style="width: 18rem;"}>
+            <img class="card-img-top" src="${2:holder.js/100%x180/?text=Image cap}" alt="${3:Card image cap}">
+            <div class="card-body">
+              <h5 class="card-title">${4:Card title}</h5>
+              <p class="card-text">${5:Some quick example text to build on the card title and make up the bulk of the card's content.}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${6:Cras justo odio}</li>
+              <li class="list-group-item">${7:Dapibus ac facilisis in}</li>
+              <li class="list-group-item">${8:Vestibulum at eros}</li>
+            </ul>
+            <div class="card-body">
+              <a href="${9:#}" class="card-link">${10:Card link}</a>
+              <a href="${11:#}" class="card-link">${12:Another link}</a>
+            </div>
+          </div>
+            """
