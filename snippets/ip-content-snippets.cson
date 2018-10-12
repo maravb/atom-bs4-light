@@ -1,0 +1,186 @@
+# Atom Flight Manual:
+# https://flight-manual.atom.io/using-atom/sections/snippets/
+
+'.text.html':
+
+  # SVG collection
+  'ip use SVG':
+    'prefix': 'ip-use-SVG'
+    'body': """
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+    <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
+    </svg>
+    """
+    'description': 'It takes nodes from within the SVG document, and duplicates them somewhere else'
+    'descriptionMoreURL': 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
+
+    'vb use Transform SVG':
+      'prefix': 'vb-Transform-SVG'
+      'body': """
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+      <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:50},${2:50}) scale(${3:.9})"/>
+      </svg>
+      """
+      'description': 'This transform definition specifies a translate and a scale operation by x and y.'
+      'descriptionMoreURL': 'https://developer.mozilla.org/de/docs/Web/SVG/Attribute/transform'
+
+# ip-collection
+  'app-00':
+    'prefix': 'ip-apps'
+    'description': 'Приложение к документу'
+    'body': """
+            <div class="pt-3 border-top">
+             <p class="text-muted text-right" id="app0${1:1-9}">Приложение ${1:1-9} <br>к $2 от $3 </p>
+             <h3 class="pt-2"> $0 </h3>
+            </div>
+             """
+  'fns-order':
+    'prefix': 'ip-fns-order'
+    'description': 'Приказ ФНС России'
+    'body': """
+            <article id="fns-1${3:8|9}mmv$6" class="pt-3 border-top">
+              <header class="media pt-1"><img class="d-flex mt-1 mr-3" src="/ip/img-ib-distr/logos/logo-fns.png" width="auto" height="48" alt="Документ ФНС России"><div class="media-body text-muted">
+              Приказ ФНС России от $1.$2.201${3:8|9} № ММВ-$4-$5/$6@
+                <h2 class="law-docs"><a data-toggle="collapse" href="#collapse-18mmv$6" aria-expanded="false" aria-controls="collapse-18mmv$6">
+              Об...
+               </a></h2></div>
+              </header>
+              <div class="collapse" id="collapse-18mmv$6"><div class="card card-body">
+                <p class="card-text">
+                  Приказ Федеральной налоговой службы от $1.$2.201${3:8|9} № ММВ-$4-$5/$6@
+                  «Об ...»
+                </p>
+              <a class="text-right" data-toggle="collapse" href="#collapse-18mmv$6" aria-expanded="false" aria-controls="collapse-18mmv$6"><i class="ib ib-fold fa-lg text-right" aria-hidden="true"></i></a></div></div>
+              <div class="pt-3 border-top">
+                $0
+                <p class="pt-2 text-muted">Руководитель<br>Федеральной налоговой службы<br>М.В.Мишустин</p>
+              </div>
+             </article>
+            	"""
+  'fns-letter':
+    'prefix': 'ip-fns-letter'
+    'description': 'Письмо ФНС России'
+    'body': """
+            <article id="fns-1${3:8|9}fns$7" class="pt-3 border-top">
+              <header class="media pt-1"><img class="d-flex mt-1 mr-3" src="/ip/img-ib-distr/logos/logo-fns.png" width="auto" height="48" alt="Документ ФНС России"><div class="media-body text-muted">
+              Письмо ФНС России от $1.$2.201${3:8|9} № ${4:БС|ГД|ЕД|СА}-$5-$6/$7@
+                <h2 class="law-docs"><a data-toggle="collapse" href="#collaps\e-18fns$7" aria-expanded="false" aria-controls="collapse-18fns$7">
+              Об...
+               </a></h2></div>
+              </header>
+              <div class="collapse" id="collapse-18fns$7"><div class="card card-body">
+                <p class="card-text">
+                  Письмо Федеральной налоговой службы от $1.$2.201${3:8|9} № ${4:БС|ГД|ЕД|СА}-$5-$6/$7@
+                  «Об ...»
+                </p>
+              <a class="text-right" data-toggle="collapse" href="#collapse-18fns$7" aria-expanded="false" aria-controls="collapse-18fns$7"><i class="ib ib-fold fa-lg text-right" aria-hidden="true"></i></a></div></div>
+              <div class="pt-3 border-top">
+                $0
+                <p class=\"pt-2 text-muted\">Действительный<br>государственный советник<br>Российской Федерации<br>2 класса<br>${8:С.Л.Бондарчук|Д.Ю.Григоренко|Д.В.Егоров|С.А.Аракелов}</p>
+              </div>
+            </article>
+             """
+
+  'ip-card-deck':
+    'prefix': 'ip-card-deck'
+    'description': 'Cards: card-deck. Just like with card groups, card footers in decks will automatically line up.'
+    'body': """
+            <div class="card-deck">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            """
+  'ip-card-deck-min':
+    'prefix': 'ip-card-deck-min'
+    'description': 'Cards: card-deck-min. Card-body only - no img, no title, no footer.'
+    'body': """
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">${1:Content 1}</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">${2:Content 2}</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">${3:Content 3}</p>
+                </div>
+              </div>
+            </div>
+            """
+
+  'ip figure - BS-4':
+    'prefix': 'ip-fig-bs4'
+    'description': 'Figure with a caption'
+    'body': """
+            <figure class="figure">
+                <img src="/ip/${1:img-ib-distr/svgStoreIB/IB-10-SNT-ORN-1.svg}" class="figure-img img-fluid rounded" alt="$2">
+                <figcaption class="figure-caption text-center">$0</figcaption>
+            </figure>
+            """
+
+  'ip html 5 - BS-4':
+    'prefix': 'ip-html-bs4'
+    'description': 'an HTML5 doctype with a viewport meta tag for proper responsive behaviors'
+    'body': """
+            <!doctype html>
+            <html lang="en">
+              <head>
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                <!-- Google font -->
+                <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+                <title>${1:Hello, world!}</title>
+              </head>
+              <body>
+              <div class="container">
+              <!-- Content here -->
+                <h1>${2:Hello, world!}</h1>
+                $0
+                <!-- ./ end of Content -->
+              </div>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+              </body>
+            </html>
+            """
