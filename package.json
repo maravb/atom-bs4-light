@@ -22,7 +22,7 @@
     "HTML"
   ],
   "optionalDependencies": {},
-  "readme": "# Bootstrap 4 Support for Atom\n\nProvides [Bootstrap 4][1] classes and HTML tags with autocompletion features.\n\nInstall:\n```bash\napm install atom-bootstrap4\n```\n\nKey Features:\n\n  -
+  "readme": "# bs4 and SVG (v2) snippets\n\nSome Bootstrap 4 and SVG (v2) snippets for Atom.\n\nInstall:\n```bash\napm install atom-bootstrap4\n```\n\nKey Features:\n\n  -
   \n",
   "readmeFilename": "README.md",
   "repository": {
