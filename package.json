@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "description": "Some Bootstrap 4 and SVG (v2) snippets for Atom",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {},
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "homepage": "https://github.com/vBuresh/atom-bs4-light",
   "keywords": [
     "Bootstrap4 ",
-    "Bootstrap 4",
     "Bootstrap  ",
     "Framework  ",
     "Responsive ",
@@ -19,25 +16,10 @@
     "Github     ",
     "CSS        ",
     "JS         ",
-    "HTML"
+    "HTML       ",
+    "SVG        "
   ],
-  "optionalDependencies": {},
-  "readme": "# bs4 and SVG (v2) snippets\n\nSome Bootstrap 4 and SVG (v2) snippets for Atom.\n\nInstall:\n```bash\napm install atom-bootstrap4\n```\n\nKey Features:\n\n  -
-  \n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vBuresh/atom-bs4-light.git"
-  },
-
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
 }
