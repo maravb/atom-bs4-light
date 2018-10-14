@@ -35,18 +35,18 @@
 
 ### content, layout, extend, etting-started
 
-| **№№** | **content** | **layout**           | **extend**      | **etting-started** |
-| -----: | :---------- | :------------------- | :-------------- | :----------------- |
-|     1. | code        | grid                 | extend-approach | accessibility      |
-|     2. | figures     | media-object         | extend-icons    | best-practices     |
-|     3. | images      | overview             |                 | browsers-devices   |
-|     4. | reboot      | utilities-for-layout |                 | build-tools        |
-|     5. | tables      |                      |                 | contents           |
-|     6. | typography  |                      |                 | download           |
-|     7. |             |                      |                 | introduction       |
-|     8. |             |                      |                 | javascript         |
-|     9. |             |                      |                 | theming            |
-|    10. |             |                      |                 | webpack            |
+| **№№** | **content** | **layout**   | **extend**      | **etting-started** |
+| -----: | :---------- | :----------- | :-------------- | :----------------- |
+|     1. | code        | overview     | extend-approach | accessibility      |
+|     2. | figures     | containers   | extend-icons    | best-practices     |
+|     3. | images      | grid         |                 | browsers-devices   |
+|     4. | reboot      | media-object |                 | build-tools        |
+|     5. | tables      | utilities    |                 | contents           |
+|     6. | typography  |              |                 | download           |
+|     7. |             |              |                 | introduction       |
+|     8. |             |              |                 | javascript         |
+|     9. |             |              |                 | theming            |
+|    10. |             |              |                 | webpack            |
 
 Впечатляет. Однако не всё же сразу. Итак - по-порядку. Что-то вроде полного оглавления (TOC)
 
@@ -128,10 +128,11 @@
 
 ### layout
 
-1.  layout-grid
-2.  layout-media-object
-3.  layout-overview
-4.  layout-utilities-for-layout
+1.  layout-overview    
+2.  layout-containers  
+3.  layout-grid        
+4.  layout-media-object
+5.  layout-utilities-for-layout
 
 ### utilities
 

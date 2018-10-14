@@ -4,40 +4,40 @@
 '.text.html':
 
   # SVG collection
-  'ip use SVG':
-    'prefix': 'ip-use-SVG'
-    'body': """
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-    <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
-    </svg>
-    """
-    'description': 'It takes nodes from within the SVG document, and duplicates them somewhere else'
-    'descriptionMoreURL': 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
+  'ip USE html':
+    prefix: 'ip-use-html'
+    body: """
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+            <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
+            </svg>
+            """
+    description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
+    descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
 
-    'vb use Transform SVG':
-      'prefix': 'vb-Transform-SVG'
-      'body': """
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-      <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:50},${2:50}) scale(${3:.9})"/>
-      </svg>
-      """
-      'description': 'This transform definition specifies a translate and a scale operation by x and y.'
-      'descriptionMoreURL': 'https://developer.mozilla.org/de/docs/Web/SVG/Attribute/transform'
+  'vb USE Transform html':
+    prefix: 'vb-use-transform-html'
+    body: """
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+            <use href="../../ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:-12},${3:6}) scale(${4:.25})"/>
+            </svg>
+            """
+    description: 'This transform definition specifies a translate and a scale operation by x and y.'
+    'descriptionMoreURL': 'https://developer.mozilla.org/de/docs/Web/SVG/Attribute/transform'
 
 # ip-collection
   'app-00':
-    'prefix': 'ip-apps'
-    'description': 'Приложение к документу'
-    'body': """
+    prefix: 'ip-apps'
+    description: 'Приложение к документу'
+    body: """
             <div class="pt-3 border-top">
              <p class="text-muted text-right" id="app0${1:1-9}">Приложение ${1:1-9} <br>к $2 от $3 </p>
              <h3 class="pt-2"> $0 </h3>
             </div>
              """
   'fns-order':
-    'prefix': 'ip-fns-order'
-    'description': 'Приказ ФНС России'
-    'body': """
+    prefix: 'ip-fns-order'
+    description: 'Приказ ФНС России'
+    body: """
             <article id="fns-1${3:8|9}mmv$6" class="pt-3 border-top">
               <header class="media pt-1"><img class="d-flex mt-1 mr-3" src="/ip/img-ib-distr/logos/logo-fns.png" width="auto" height="48" alt="Документ ФНС России"><div class="media-body text-muted">
               Приказ ФНС России от $1.$2.201${3:8|9} № ММВ-$4-$5/$6@
@@ -58,9 +58,9 @@
              </article>
             	"""
   'fns-letter':
-    'prefix': 'ip-fns-letter'
-    'description': 'Письмо ФНС России'
-    'body': """
+    prefix: 'ip-fns-letter'
+    description: 'Письмо ФНС России'
+    body: """
             <article id="fns-1${3:8|9}fns$7" class="pt-3 border-top">
               <header class="media pt-1"><img class="d-flex mt-1 mr-3" src="/ip/img-ib-distr/logos/logo-fns.png" width="auto" height="48" alt="Документ ФНС России"><div class="media-body text-muted">
               Письмо ФНС России от $1.$2.201${3:8|9} № ${4:БС|ГД|ЕД|СА}-$5-$6/$7@
@@ -82,9 +82,9 @@
              """
 
   'ip-card-deck':
-    'prefix': 'ip-card-deck'
-    'description': 'Cards: card-deck. Just like with card groups, card footers in decks will automatically line up.'
-    'body': """
+    prefix: 'ip-card-deck'
+    description: 'Cards: card-deck. Just like with card groups, card footers in decks will automatically line up.'
+    body: """
             <div class="card-deck">
               <div class="card">
                 <img class="card-img-top" src="..." alt="Card image cap">
@@ -119,9 +119,9 @@
             </div>
             """
   'ip-card-deck-min':
-    'prefix': 'ip-card-deck-min'
-    'description': 'Cards: card-deck-min. Card-body only - no img, no title, no footer.'
-    'body': """
+    prefix: 'ip-card-deck-min'
+    description: 'Cards: card-deck-min. Card-body only - no img, no title, no footer.'
+    body: """
             <div class="card-deck">
               <div class="card">
                 <div class="card-body">
@@ -142,9 +142,9 @@
             """
 
   'ip figure - BS-4':
-    'prefix': 'ip-fig-bs4'
-    'description': 'Figure with a caption'
-    'body': """
+    prefix: 'ip-fig-bs4'
+    description: 'Figure with a caption'
+    body: """
             <figure class="figure">
                 <img src="/ip/${1:img-ib-distr/svgStoreIB/IB-10-SNT-ORN-1.svg}" class="figure-img img-fluid rounded" alt="$2">
                 <figcaption class="figure-caption text-center">$0</figcaption>
@@ -152,9 +152,9 @@
             """
 
   'ip html 5 - BS-4':
-    'prefix': 'ip-html-bs4'
-    'description': 'an HTML5 doctype with a viewport meta tag for proper responsive behaviors'
-    'body': """
+    prefix: 'ip-html-bs4'
+    description: 'an HTML5 doctype with a viewport meta tag for proper responsive behaviors'
+    body: """
             <!doctype html>
             <html lang="en">
               <head>
