@@ -6,6 +6,8 @@
 2. Через час,
 3. К утру.
 
+[About .md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
+
 **20181015**
 
 - [x] Вставить SVG рисунок (год) в шаблон. 
