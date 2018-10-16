@@ -1,12 +1,8 @@
 # Current tasks
 
-1. Just now.
+1. Right now.
 1. In an hour.
 1. By the morning.
-
-
-
-
 
 [About .md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 
