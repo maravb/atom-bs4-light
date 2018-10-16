@@ -7,20 +7,42 @@
   'ip use':
     prefix: 'ip-use'
     body: """
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-            <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
-            </svg>
-            """
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+          <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
+          </svg>
+          """
     description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
     descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
+
+  'ip icon-colors':
+    prefix: 'ip-icon-colors'
+    body: """
+          <defs>
+          <style type="text/css">
+           .fill-blue {fill:#42a5f5;}
+           .fill-amber {fill:#ffd180}
+           .fill-red {fill:#ff7043}
+           .fill-gray {fill:#adb5bd}
+           .fill-gray2 {fill:#7289a7}
+          </style>
+          </defs>
+            """
+    description: 'Recomend icon colors'
+
+  'ip border':
+    prefix: 'ip-border'
+    body: """
+          <rect x="0" y="0" width="500" height="500" fill="none" stroke="#CC0F16" stroke-width="2"/>
+          """
+    description: 'Show viewBox borders'
 
   'vb USE Transform':
     prefix: 'vb-use-transform'
     body: """
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
-            <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:-12},${3:6}) scale(${4:.25})"/>
-            </svg>
-            """
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+          <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:-12},${3:6}) scale(${4:.25})"/>
+          </svg>
+          """
     description: 'This transform definition specifies a translate and a scale operation by x and y.'
     'descriptionMoreURL': 'https://developer.mozilla.org/de/docs/Web/SVG/Attribute/transform'
 
