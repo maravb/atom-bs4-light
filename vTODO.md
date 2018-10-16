@@ -1,10 +1,12 @@
-# Задачник
+# Current tasks
 
-В армии три степени готовности: 
+1. Just now.
+1. In an hour.
+1. By the morning.
 
-1. Сейчас,
-2. Через час,
-3. К утру.
+
+
+
 
 [About .md](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 
