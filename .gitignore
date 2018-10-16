@@ -1,6 +1,8 @@
 .DS_Store
 npm-debug.log
 node_modules/
-wDev/
+dev/
+svg/ip/svgs
 wTest.html
 wTest.svg
+wwwTest.html
