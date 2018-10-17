@@ -29,6 +29,20 @@
             """
     description: 'Recomend icon colors'
 
+  'ip Media object':
+    prefix: 'ip-media-object'
+    body: """
+          <div class="media">
+            <img class="mr-3" src="/ip/svgs/${1:vb-compass}.svg" width="auto" height="48" alt="${2:Image}">
+            <div class="media-body">
+              <h5 class="mt-0">${3:Media heading}</h5>
+                ${3:Text}
+            </div>
+          </div>
+          """
+    description: 'The media object helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.'
+    descriptionMoreURL: 'https://getbootstrap.com/docs/4.1/layout/media-object/#example'
+
   'ip border':
     prefix: 'ip-border'
     body: """

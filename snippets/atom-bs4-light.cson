@@ -152,7 +152,7 @@
     prefix: 'vbb-media-object'
     body: """
           <div class="media">
-            <img class="mr-3" src="${1:.../64x64}" alt="${2:Generic placeholder image}">
+            <img class="mr-3" src="${1:svg/pics/vb-doggy.svg}  width="auto" height="48"" alt="${2:doggy}">
             <div class="media-body">
               <h5 class="mt-0">${3:Media heading}</h5>
               ${3:Text}
