@@ -14,8 +14,8 @@
     description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
     descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
 
-  'ip icon-colors':
-    prefix: 'ip-icon-colors'
+  'ip color-icon':
+    prefix: 'ip-color-icon'
     body: """
           <defs>
           <style type="text/css">
@@ -27,7 +27,28 @@
           </style>
           </defs>
             """
-    description: 'Recomend icon colors'
+  description: 'Recomend icon colors'
+
+  'ip color-cyan':
+    prefix: 'ip-color-cyan'
+    body: """
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+            <rect x="0" y="0" width="170" height="170" fill="#23807e"/>
+            <rect x="170" y="0" width="170" height="170" fill="#4afcfe"/>
+            <rect x="340" y="0" width="170" height="170" fill="#55dafd"/>
+
+            <rect x="0" y="170" width="170" height="170" fill="#2e95b4"/>
+            <rect x="170" y="170" width="170" height="170" fill="#59d3c8"/>
+            <rect x="340" y="170" width="170" height="170" fill="#41ffc9"/>
+
+            <rect x="0" y="340" width="170" height="170" fill="#1d7791"/>
+            <rect x="170" y="340" width="170" height="170" fill="#b2fefe"/>
+            <rect x="340" y="340" width="170" height="170" fill="#41bbac"/>
+          </svg>
+          """
+    description: 'Cyan [saɪ.ən] or rarely, [ˈsaɪ.æn] is a greenish-blue color. It is evoked by light with a predominant wavelength of between 490–520 nm, between the wavelengths of green and blue.'
+    descriptionMoreURL: 'https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D0%B5-%D0%B7%D0%B5%D0%BB%D1%91%D0%BD%D1%8B%D0%B9_%D1%86%D0%B2%D0%B5%D1%82'
 
   'ip Media object':
     prefix: 'ip-media-object'
@@ -42,13 +63,6 @@
           """
     description: 'The media object helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.'
     descriptionMoreURL: 'https://getbootstrap.com/docs/4.1/layout/media-object/#example'
-
-  'ip border':
-    prefix: 'ip-border'
-    body: """
-          <rect x="0" y="0" width="500" height="500" fill="none" stroke="#CC0F16" stroke-width="2"/>
-          """
-    description: 'Show viewBox borders'
 
   'vb USE Transform':
     prefix: 'vb-use-transform'
@@ -105,97 +119,128 @@
   'ip TOC col-3':
     prefix: 'ip-toc-col-3'
     body: """
-          <svg xmlns="http://www.w3.org/2000/svg" id="SVGtocCol-3" viewbox="0 0 1140 182">
-            <g id="tocCols" font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="22">
-              <g id="tocCol-1">
-                <a href="#1610booklet-buh">
-                  <text x="10" y="25">
-                    Бухгалтерский учёт и отчётность
-                    <tspan x="10" y="50" fill="#7289a7" font-size="18">
-                      Бухгалтерский и налоговый учёт
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="0" y="0"/>
-                </a>
-                <a href="#1615.html">
-                  <text x="10" y="85">
-                    Зарплата и кадры
-                    <tspan x="10" y="110" fill="#7289a7" font-size="18">
-                      Начисления, выплаты, налоги, взносы
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="0" y="60"/>
-                </a>
-                <a href="1614.html">
-                  <text x="10" y="145">
-                    Денежные средства
-                    <tspan x="10" y="170" fill="#7289a7" font-size="18">"Банк", "Касса", "Касса-онлайн"
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="0" y="120"/>
-                </a>
-              </g>
-              <g id="tocCol-2">
-                <a href="#1610booklet-sklad">
-                  <text x="390" y="25">
-                    Торговля. Товары и склад
-                    <tspan x="390" y="50" fill="#7289a7" font-size="18">
-                      Опт, розница, интернет-торговля
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="380" y="0"/>
-                </a>
-                <a href="#1610booklet-dop-pro">
-                  <text x="390" y="85">
-                    Производство
-                    <tspan x="390" y="110" fill="#7289a7" font-size="18">
-                      Производственный учёт. Комплектация
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="380" y="60"/>
-                </a>
-                <a href="1610booklet-uslugi">
-                  <text x="390" y="145">
-                    Учет работ, услуг
-                    <tspan x="390" y="170" fill="#7289a7" font-size="18">
-                      Оказанные (выполненные) и принятые
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="380" y="120"/>
-                </a>
-              </g>
-              <g id="tocCol-3">
-                <a href="#1610managersAcc">
-                  <text x="770" y="25">
-                    Управленческий учёт
-                    <tspan x="770" y="50" fill="#7289a7" font-size="18">
-                      Сметы, контроль, анализ
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="760" y="0"/>
-                </a>
-                <a href="#1625.html">
-                  <text x="770" y="85">
-                    Отраслевые решения
-                    <tspan x="770" y="110" fill="#7289a7" font-size="18">
-                      НКО, ТСЖ, СНТ, ГСК
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="760" y="60"/>
-                </a>
-                <a href="#1610ptv">
-                  <text x="770" y="145">
-                    Поддержка пользователей
-                    <tspan x="770" y="170" fill="#7289a7" font-size="18">
-                      Путеводители, онлайн сервисы
-                    </tspan>
-                  </text>
-                  <use href="#topTOCborder" x="760" y="120"/>
-                </a>
-              </g>
-              <rect x="0" y="0" width="1140" height="180" fill="none" stroke="#cfd8dc" stroke-width="0"/>
-            </g>
-          </svg>
+          <div class="card-group">
+            <div class="card border-0">
+              <svg xmlns="http://www.w3.org/2000/svg" id="SVGtocCol-1" viewbox="0 0 382 182">
+                <defs>
+                  <rect id="tocBorder" width="382" height="60" fill="none" stroke="#cfd8dc" stroke-width=".5" />
+                </defs>
+                <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
+                  <a href="/promo/1626#about-snt">
+                    <use href="/ip/svgs/vb_flower.svg#vb_flower" transform="translate(-8,8) scale(.2125)" />
+                    <text x="70" y="25">
+                      Программа для СНТ
+                      <tspan x="70" y="48" fill="#7289a7" font-size="16">
+                        Преимущества и возможности
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="0" />
+                  </a>
+                  <a href="/promo/1626#uOtch">
+                    <use /href="/ip/svgs/vb_reporting.svg#vb_reporting" transform="translate(-8,68) scale(.2125)" />
+                    <text x="70" y="85">
+                      Внутренняя отчётость
+                      <tspan x="70" y="108" fill="#7289a7" font-size="16">
+                        Оборотки, карточки, регистры
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="60" />
+                  </a>
+                  <a href="/promo/1626#sad-balance">
+                    <use /href="/ip/svgs/vb_analytics.svg#vb_analytics" transform="translate(-8,128) scale(.2125)" />
+                    <text x="70" y="145">
+                      Поступления и расходы
+                      <tspan x="70" y="168" fill="#7289a7" font-size="16">
+                        Суммы поступлений и затрат
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="120" />
+                  </a>
+                </g>
+                <rect x="0" y="0" width="380" height="180" fill="none" stroke="#cfd8dc" stroke-width="0" />
+              </svg>
+            </div>
+            <div class="card border-0">
+              <svg id="SVGtocCol-2" viewbox="0 0 382 182">
+                <defs>
+                  <rect width="382" height="60" fill="none" stroke="#cfd8dc" stroke-width=".5" />
+                </defs>
+                <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
+                  <a href="/promo/1626#uu-uo">
+                    <use /href="/ip/svgs/vb_manag-acc.svg#vb_manag-acc" transform="translate(-8,8) scale(.2125)" />
+                    <text x="70" y="25">
+                      Управленческий учёт
+                      <tspan x="70" y="48" fill="#7289a7" font-size="16">
+                        Учёт и отчеты для руководителя
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="0" />
+                  </a>
+                  <a href="/promo/1626#sad-reestr">
+                    <use /href="/ip/svgs/vb_сottage.svg#vb_сottage" transform="translate(-8,68) scale(.2125)" />
+                    <text x="70" y="85">
+                      Реестр членов СНТ
+                      <tspan x="70" y="108" fill="#7289a7" font-size="16">
+                        Выписки, обработка ПД
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="60" />
+                  </a>
+                  <a href="/promo/1626#sad-smeta">
+                    <use /href="/ip/svgs/vb_smeta.svg#vb_smeta" transform="translate(-8,128) scale(.2125)" />
+                    <text x="70" y="145">
+                      Сметы товарищества
+                      <tspan x="70" y="168" fill="#7289a7" font-size="16">
+                        План поступлений и расходов
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="120" />
+                  </a>
+                </g>
+                <rect x="0" y="0" width="380" height="180" fill="none" stroke="#cfd8dc" stroke-width="0" />
+              </svg>
+            </div>
+            <div class="card border-0">
+              <svg id="SVGtocCol-3" viewbox="0 0 382 182">
+                <defs>
+                  <rect width="382" height="60" fill="none" stroke="#cfd8dc" stroke-width=".5" />
+                </defs>
+                <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
+                  <a href="/promo/1626#snt-buh">
+                    <use /href="/ip/svgs/vb_buh.svg#vb_buh" transform="translate(-8,8) scale(.2125)" />
+                    <text x="70" y="25">
+                      Бухучёт и налоги в СНТ
+                      <tspan x="70" y="48" fill="#7289a7" font-size="16">
+                        Бухгалтерский и налоговый учёт
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="0" />
+                  </a>
+                  <a href="/promo/1626#uOtch">
+                    <use /href="/ip/svgs/vb_сottage.svg#vb_сottage" transform="translate(-8,68) scale(.2125)" />
+                    <text x="70" y="85">
+                      Расчеты с участниками
+                      <tspan x="70" y="108" fill="#7289a7" font-size="16">
+                        Журналы. Реестр задолженностией
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="60" />
+                  </a>
+                  <a href="/promo/1626#ptv">
+                    <use /href="/ip/svgs/vb_compass.svg#vb_compass" transform="translate(-8,128) scale(.2125)" />
+                    <text x="70" y="145">
+                      Путеводитель по программе
+                      <tspan x="70" y="168" fill="#7289a7" font-size="16">
+                        Помощь и поддержка пользователей
+                      </tspan>
+                    </text>
+                    <use href="#tocBorder" x="0" y="120" />
+                  </a>
+                </g>
+                <rect x="0" y="0" width="380" height="180" fill="none" stroke="#cfd8dc" stroke-width="0" />
+              </svg>
+            </div>
+          </div>
           """
     description: 'Подкарусельное меню SVG'
     descriptionMoreURL: 'https://www.ib.ru/promo/1610'

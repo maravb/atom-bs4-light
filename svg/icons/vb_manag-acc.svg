@@ -1,13 +1,13 @@
-<svg id="vb_manag-acc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <g fill="#adb5bd">
-  <path fill="#ff7043" d="M248 193h15.5v42.3H248z"/>
-  <path d="M243 178h26l-13 37z" fill="#ff7043"/>
-  <ellipse ry="66" rx="50" cy="102" cx="256" fill="#ffd180"/>
-  <path d="M373.32 232c.43 43-53.12 88-117.12 88-65 0-116.45-45-116.88-88-.35-35 34.36-64 80.27-73l36.77 77 36.23-77c46.1 10 80.39 39 80.73 73z" fill="#42a5f5"/>
-    <path d="M119 280c40 45 88 70 137 70s97-25 137-70" fill="none" stroke="#adb5bd" stroke-width="24"/>
-    <circle r="35" cy="340" cx="71"/>
-    <circle r="35" cy="427" cx="255"/>
-    <circle r="35" cy="340" cx="443"/>
-    <path d="M245 359h23.3v35.7H245zM119.132 280.112l15.009 17.823-41.46 34.912-15.007-17.823zM393.017 280.005L378.01 297.83l41.463 34.905 15.006-17.825z"/>
-  </g>
+<svg id="vb_manag-acc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#adb5bd">
+  <path d="M247 198h19v49h-19z" fill="#ff7043"/>
+  <path d="M242 181h29l-15 33z" fill="#ff7043"/>
+  <ellipse ry="74" rx="56.1" cy="96" cx="256" fill="#ffd180"/>
+  <path d="M387 241c1 49-59 99-131 99-73 0-130-50-131-99 0-38 39-70 90-81l41 87 42-87c51 12 89 44 89 81z" fill="#42a5f5"/>
+  <circle r="39.3" cx="90" cy="416"/>
+  <circle r="40" cx="254" cy="473"/>
+  <circle r="40" cx="420" cy="416"/>
+  <path d="M124 359c35 27 80 43 132 43 53 0 96-15 130-40l-25-26c-29 21-64 33-105 33-42 0-78-13-108-34z"/>
+  <rect id="cube" rx="15" ry="15" x="244" y="380" width="24" height="100"/>
+  <use href="#cube" transform="translate(246,-108) rotate(45)"/>
+  <use href="#cube" transform="translate(-98,256) rotate(-45)"/>
 </svg>

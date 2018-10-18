@@ -4,8 +4,15 @@
 
 '.text.xml.svg':
 
-  'svg-xml':
-    prefix: 'vb-xml'
+  'vv border':
+    prefix: 'vv-border'
+    body: """
+          <rect x="0" y="0" width="510" height="510" fill="none" stroke="#CC0F16" stroke-width="2"/>
+          """
+    description: 'Show viewBox="0 0 512 512 borders'
+
+  'vv SVG-xml':
+    prefix: 'vv-svg-xml'
     body: """
           <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="40" stroke="red" fill="grey" />
@@ -19,9 +26,31 @@
     description: 'The svg element is a container that defines a new coordinate system and viewport. It is used as the outermost element of any SVG document but it can also be used to embed a SVG fragment inside any SVG or HTML document.\n\t\t Note: The xmlns attribute is only required on the outermost svg element of SVG documents.'
     descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg'
 
+  'vv use':
+    prefix: 'vv-use'
+    body: """
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+          <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" x="${2:0}" y="${3:0}" />
+          </svg>
+          """
+    description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
+    descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
 
-  'Basic shapes':
-    prefix: 'vb-basic-shapes'
+    description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
+    descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
+
+  'vv USE Transform html':
+    prefix: 'vv-use-transform-html'
+    body: """
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+          <use href="/ip/svgs/${1:vb-}.svg#${1:vb-}" transform="translate(${2:-12},${3:6}) scale(${4:.25})"/>
+          </svg>
+          """
+    description: 'This transform definition specifies a translate and a scale operation by x and y.'
+    'descriptionMoreURL': 'https://developer.mozilla.org/de/docs/Web/SVG/Attribute/transform'
+
+  'vv Basic shapes':
+    prefix: 'vv-basic-shapes'
     body: """
           <?xml version="1.0" standalone="no"?>
           <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -46,8 +75,8 @@
     descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes'
 
 
-  'Points':
-    prefix: 'vb-point'
+  'vv Points':
+    prefix: 'vv-point'
     body: """
           <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 10 H 500 V 500 H 10 L 10 10"/>

@@ -14,7 +14,7 @@
     description: 'It takes nodes from within the SVG document, and duplicates them somewhere else'
     descriptionMoreURL: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use'
 
-  'vb USE Transform html':
+  'ip USE Transform html':
     prefix: 'vb-use-transform-html'
     body: """
           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
@@ -196,7 +196,7 @@
                 </defs>
                 <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
                   <a href="/promo/1626#about-snt">
-                    <use href="/ip/svgs/vb-flower.svg#vb-flower" transform="translate(-8,8) scale(.2125)" />
+                    <use href="/ip/svgs/vb_flower.svg#vb_flower" transform="translate(-8,8) scale(.2125)" />
                     <text x="70" y="25">
                       Программа для СНТ
                       <tspan x="70" y="48" fill="#7289a7" font-size="16">
@@ -206,7 +206,7 @@
                     <use href="#tocBorder" x="0" y="0" />
                   </a>
                   <a href="/promo/1626#uOtch">
-                    <use /href="/ip/svgs/vb-reporting.svg#vb-reporting" transform="translate(-8,68) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_reporting.svg#vb_reporting" transform="translate(-8,68) scale(.2125)" />
                     <text x="70" y="85">
                       Внутренняя отчётость
                       <tspan x="70" y="108" fill="#7289a7" font-size="16">
@@ -216,7 +216,7 @@
                     <use href="#tocBorder" x="0" y="60" />
                   </a>
                   <a href="/promo/1626#sad-balance">
-                    <use /href="/ip/svgs/vb-analytics.svg#vb-analytics" transform="translate(-8,128) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_analytics.svg#vb_analytics" transform="translate(-8,128) scale(.2125)" />
                     <text x="70" y="145">
                       Поступления и расходы
                       <tspan x="70" y="168" fill="#7289a7" font-size="16">
@@ -236,7 +236,7 @@
                 </defs>
                 <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
                   <a href="/promo/1626#uu-uo">
-                    <use /href="/ip/svgs/vb-manag-acc.svg#vb-manag-acc" transform="translate(-8,8) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_manag-acc.svg#vb_manag-acc" transform="translate(-8,8) scale(.2125)" />
                     <text x="70" y="25">
                       Управленческий учёт
                       <tspan x="70" y="48" fill="#7289a7" font-size="16">
@@ -246,7 +246,7 @@
                     <use href="#tocBorder" x="0" y="0" />
                   </a>
                   <a href="/promo/1626#sad-reestr">
-                    <use /href="/ip/svgs/vb-сottage.svg#vb-сottage" transform="translate(-8,68) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_сottage.svg#vb_сottage" transform="translate(-8,68) scale(.2125)" />
                     <text x="70" y="85">
                       Реестр членов СНТ
                       <tspan x="70" y="108" fill="#7289a7" font-size="16">
@@ -256,7 +256,7 @@
                     <use href="#tocBorder" x="0" y="60" />
                   </a>
                   <a href="/promo/1626#sad-smeta">
-                    <use /href="/ip/svgs/vb-smeta.svg#vb-smeta" transform="translate(-8,128) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_smeta.svg#vb_smeta" transform="translate(-8,128) scale(.2125)" />
                     <text x="70" y="145">
                       Сметы товарищества
                       <tspan x="70" y="168" fill="#7289a7" font-size="16">
@@ -276,7 +276,7 @@
                 </defs>
                 <g font-family="'Noto Sans'" text-anchor="start" fill="#007bff" font-size="20">
                   <a href="/promo/1626#snt-buh">
-                    <use /href="/ip/svgs/vb-buh.svg#vb-buh" transform="translate(-8,8) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_buh.svg#vb_buh" transform="translate(-8,8) scale(.2125)" />
                     <text x="70" y="25">
                       Бухучёт и налоги в СНТ
                       <tspan x="70" y="48" fill="#7289a7" font-size="16">
@@ -286,7 +286,7 @@
                     <use href="#tocBorder" x="0" y="0" />
                   </a>
                   <a href="/promo/1626#uOtch">
-                    <use /href="/ip/svgs/vb-сottage.svg#vb-сottage" transform="translate(-8,68) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_сottage.svg#vb_сottage" transform="translate(-8,68) scale(.2125)" />
                     <text x="70" y="85">
                       Расчеты с участниками
                       <tspan x="70" y="108" fill="#7289a7" font-size="16">
@@ -296,7 +296,7 @@
                     <use href="#tocBorder" x="0" y="60" />
                   </a>
                   <a href="/promo/1626#ptv">
-                    <use /href="/ip/svgs/vb-compass.svg#vb-compass" transform="translate(-8,128) scale(.2125)" />
+                    <use /href="/ip/svgs/vb_compass.svg#vb_compass" transform="translate(-8,128) scale(.2125)" />
                     <text x="70" y="145">
                       Путеводитель по программе
                       <tspan x="70" y="168" fill="#7289a7" font-size="16">
